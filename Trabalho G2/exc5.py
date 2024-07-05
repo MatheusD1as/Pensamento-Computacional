@@ -1,8 +1,8 @@
-    def trocar_elementos(l1):
-   l2 = []
-   for i in range(len(l1)-1,-1,-1):
-       l2.append(l1[i])
-   return l2
+def trocar_elementos(l1):
+   for i in range(0,len(l1)//2):
+     j = len(l1) -i - 1
+     l1[i],l1[j]=l1[j],l1[i]
+   return l1
 
 def main():
     l1 = [1, 2, 3, 4, 5]
